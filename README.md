@@ -102,10 +102,23 @@ To copy the output from HDFS to your local machine:
     ```bash
     docker cp resourcemanager:/opt/hadoop-3.2.1/share/hadoop/mapreduce/output1/ shared-folder/output/
     ```
-3. Commit and push to your repo so that we can able to see your output
+## 11.**GIT Commands Used:**
+```bash
+   git init
+   git remote add origin https://github.com/rdovala411/Hands-on-L4.git
+   git add .
+   git commit -m "Adding the updated repo files"
+   git push -u origin main
+```
+*While pushing into git i faced an issue with the origin user for that I used these commands:
+```bash
+   git remote remove origin
+   git remote add origin https://github.com/rdovala411/Hands-on-L4.git
+   git remote -v
+```
 
 
-## Sample Input: 
+## Input: 
  ```bash
    Hello world
    Hello Hadoop
@@ -113,7 +126,7 @@ To copy the output from HDFS to your local machine:
    Hadoop is used for big data
    ```
 
-## Expected output: 
+## output: 
  ```bash
 Hadoop 3
 Hello 2
